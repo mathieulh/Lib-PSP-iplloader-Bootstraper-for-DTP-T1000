@@ -44,7 +44,7 @@ A few notes to take into consideration:
 * If your attempt is to run the retail Lib-PSP iplloader on your development kit, while this is possible, know that 0xBFD00000 is an illegal address range on Development Tools, 
 you will need to patch the 3 references (found on Tachyon0x01400000 and Tachyon0x00400000 builds) to a valid address on development kits (such as 0xBFC00000) otherwise it won't run.
 
-* Service mode only exists on retail Lib-PSP iplloader (DTP-T1000 and DEM-1000 units have an equivalent out of the box), it is enabled through the following c heck if ((*(u32 *)0xbe240004) & 0x10)
+* Service mode only exists on retail Lib-PSP iplloader (DTP-T1000 and DEM-1000 units have an equivalent out of the box), it is enabled through the following check if ((*(u32 *)0xbe240004) & 0x10)
 {
     use memory stick ipl routines;
 }
