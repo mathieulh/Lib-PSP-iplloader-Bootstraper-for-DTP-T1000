@@ -54,7 +54,9 @@ else
 }
 
 The 0xbe240004 is read only and can only be enabled through syscon, it is however possible to bypass this by patching the register address (or the check itself) in the pre-ipl; I personally set it to read 0xbfef00004
-because 0xBFD* is an illegal range, no publicly available Pandora MS IPL, including the time attacked IPL block are compatible, you may however craft your own IPL using ipltool (see here: https://github.com/zecoxao/ipltool) and the IPL SDK (https://github.com/mathieulh/PSP_IPL_SDK)
+
+
+Because 0xBFD* is an illegal range, no publicly available Pandora MS IPL, including the time attacked IPL block are compatible, you may however craft your own IPL using ipltool (see here: https://github.com/zecoxao/ipltool) and the IPL SDK (https://github.com/mathieulh/PSP_IPL_SDK)
 
 * If you want to use a DEM-1000/DTP-T1000 decrypted kbooti (you can dump them using the project here: https://github.com/mathieulh/DTP-T1000-Pre-IPL-dumper
 you need to understand that unless you change the IPL read address to something other than 0xBFE01000, Lib-PSP iplloader will go into an infinite loop.
