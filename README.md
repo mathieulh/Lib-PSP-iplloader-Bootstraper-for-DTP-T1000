@@ -12,13 +12,10 @@ It will decrypt/load and jump to an IPL block that itself stores 0xbfe01100 to a
 
 More information on Lib-PSP iplloader 
 
-https://playstationdev.wiki/pspdevwiki/index.php?title=PRE-IPL (the page has been taken down, a previous version of it is backupped is here: https://web.archive.org/web/20180906001636/https://www.pspdevwiki.com/wiki/PRE-IPL and here: https://drive.google.com/open?id=1ZIVlyj0bX5Twj-eUAwdkvIXZAUOcEjnvFGrGUZAawio
+https://playstationdev.wiki/pspdevwiki/index.php?title=PRE-IPL 
 
-
-If you wonder what a DTP-T1000 is and what development SKUs are available, a backup of the old SKU model page is available here: 
-
-https://web.archive.org/web/20180903223627/https://www.pspdevwiki.com/wiki/SKU_Models and here: 
-https://drive.google.com/open?id=19a7AZMWZ4IZ99fJYEwT3uJHZnAB4VPdgiAD3_MT60YE
+If you wonder what a DTP-T1000 is and what development SKUs are available,an overview is available here: 
+https://playstationdev.wiki/pspdevwiki/index.php?title=SKU_Models 
 
 For further details you may also want to look into this project: https://github.com/mathieulh/DTP-T1000-Pre-IPL-dumper
 
