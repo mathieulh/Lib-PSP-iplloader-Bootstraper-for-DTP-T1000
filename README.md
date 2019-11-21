@@ -52,6 +52,7 @@ else
 
 The 0xbe240004 is read only and can only be enabled through syscon, it is however possible to bypass this by patching the register address (or the check itself) in the pre-ipl; I personally set it to read 0xbfef00004
 
+Note that the above does not actually work, because going to the service mode/recovery device path is not enough, I tried having the development tool read an IPL block written at 0x2000 on the memory stick and it was not executed, it seems likely that syscon enables/powers the memory stick hardware whenever it detects the Jigkick device (0xffffffff serialized battery), which would be required for the pre-ipl to read the block at 0x2000. Because we do not fully control syscon on DTP-T1000, it is currently not possible to achieve a pseudo or real service mode on development tools, it even seems likely syscon does not handle such a mode as it is older/different than the retail or H1500 versions and Development tools already load IPLs externally through kbooti files.
 
 Because 0xBFD* is an illegal range, no publicly available Pandora MS IPL, including the time attacked IPL block are compatible, you may however craft your own IPL using ipltool (see here: https://github.com/zecoxao/ipltool) and the IPL SDK (https://github.com/mathieulh/PSP_IPL_SDK)
 
